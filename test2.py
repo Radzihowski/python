@@ -3,10 +3,12 @@ dragonLoot = ["gold coin", "dagger", "gold coin", "gold coin", "ruby"]
 
 
 print("Inventory:")
-for i in range(len(dragonLoot)):
-    for k,v in inv.items():
-        if dragonLoot[i] == k:
+for i in list(dragonLoot):
+    for k,v in inv.get():
+        if str(dragonLoot[i]) == str(k):
             v = v +1
-            print(v)
-        print(i)
-print(inv)
+            print(str(k) + " " + str(v))
+        else:
+            inv.setdefault(dragonLoot[i], 1)
+    print(i)
+
