@@ -1,9 +1,9 @@
-num = 9119
-count = []
+##num = 9119
+##intToStr = str(num)
+##for character in intToStr:
+##    print(int(character)*int(character), end='')
+
+def square_digits(num)
 intToStr = str(num)
 for character in intToStr:
-    print(character)
-    for i in range(len(count)):
-        count[i] = character
-print(count)
-
+    print(int(character)*int(character), end='') 
