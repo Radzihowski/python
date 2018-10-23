@@ -11,8 +11,8 @@ def addToInventory(inventory, addedItems):
                 break
             else:
                 inv.setdefault(val, 1)
-                print(inv)
                 break
-inv = addToInventory(inv, dragonLoot)
+addToInventory(inv, dragonLoot)
 print("Inventory:") 
 print(inv)
+
