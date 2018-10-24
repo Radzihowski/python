@@ -12,7 +12,15 @@ def addToInventory(inventory, addedItems):
             else:
                 inv.setdefault(val, 1)
                 break
-addToInventory(inv, dragonLoot)
-print("Inventory:") 
-print(inv)
 
+def displayInventory(inventory):
+    print("Inventory:")
+    item_total = 0
+    item = 0
+    for k, v in inventory.items():
+        item_total = item_total + v
+        print(str(v) + " " + str(k))
+    print("Total number of items: " + str(item_total))
+
+addToInventory(inv, dragonLoot)
+displayInventory(inv)
