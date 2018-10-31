@@ -1,0 +1,82 @@
+Chpter 6 Manipulating Strings
+
+>>> print("Hello there!\nHow are you?\nI\'m doing fine.")
+Hello there!
+How are you?
+I'm doing fine.
+
+>>> print(r'That is Carol\'s cat.')
+That is Carol\'s cat.
+
+"""This is a test Python program.
+Written by Al Sweigart al@inventwithpython.com
+
+This program was designed for Python 3, not Python 2.
+"""
+
+def spam():
+    """This is a multiline comment to help
+    explain what the spam() function does."""
+    print('Hello!')
+
+>>> spam = 'Hello world!'
+>>> spam[0]
+'H'
+>>> spam[4]
+'o'
+>>> spam[-1]
+'!'
+>>> spam[0:5]
+'Hello'
+>>> spam[:5]
+'Hello'
+>>> spam[6:]
+'world!'
+
+>>> spam = 'Hello world!'
+>>> fizz = spam[0:5]
+>>> fizz
+'Hello'
+
+>>> 'Hello' in 'Hello World'
+True
+>>> 'Hello' in 'Hello'
+True
+>>> 'HELLO' in 'Hello World'
+False
+>>> '' in 'spam'
+True
+>>> 'cats' not in 'cats and dogs'
+False
+
+The upper(), lower(), isupper(), and islower() String Methods
+>>> spam = 'Hello world!'
+>>> spam = spam.upper()
+>>> spam
+'HELLO WORLD!'
+>>> spam = spam.lower()
+>>> spam
+'hello world!'
+>>> spam = 'Hello world!'
+>>> spam.islower()
+False
+>>> spam.isupper()
+False
+>>> 'HELLO'.isupper()
+True
+>>> 'abc12345'.islower()
+True
+>>> '12345'.islower()
+False
+>>> '12345'.isupper()
+False
+
+isalpha() returns True if the string consists only of letters and is not blank.
+
+isalnum() returns True if the string consists only of letters and numbers and is not blank.
+
+isdecimal() returns True if the string consists only of numeric characters and is not blank.
+
+isspace() returns True if the string consists only of spaces, tabs, and new-lines and is not blank.
+
+istitle() returns True if the string consists only of words that begin with an uppercase letter followed by only lowercase letters.
