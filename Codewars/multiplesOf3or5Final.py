@@ -10,9 +10,5 @@ def solution(number):
             i = i + 1
         else:
             i = i + 1
-    print(sum)
+    return(sum)
 
-print(solution(10))
-
-        
-        
