@@ -9,10 +9,21 @@ def convert_cel_to_far(temp_cel):
 def convert_far_to_cel(temp_far):
     temp_cel = (temp_far - 32) * (5/9)
     return temp_cel
-
+# Prompt user to input temperature in Fahrenheit
 temp_far = input("Enter a temperature in degrees Fahrenheit:")
+
+# Convert the temperature to Celsius.
+# converting temp_far to float as input() return string
 temp_cel = convert_far_to_cel(float(temp_far))
+
+# Print the converted temperature
 print(f"{temp_far} degrees F = {temp_cel:.2f} degrees C")
+
+# Prompt user to input a Celsius
 temp_cel = input("\nEnter a temperature in degrees C: ")
+
+# converting the temperature to Fahrenheit
 temp_far = convert_cel_to_far(float(temp_cel))
+
+# Print the converted temperature
 print(f"{temp_cel} degrees C = {temp_far:.2f} degrees F")
