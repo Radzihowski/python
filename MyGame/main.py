@@ -1,3 +1,6 @@
+# A task from the first day of GoIT.
+# 1) ball should bounce from the borders;
+# 2) change colour on every hit.
 import random
 
 import pygame
@@ -42,3 +45,4 @@ while is_working:
     main_surface.blit(ball, bal_rect)
 
     pygame.display.flip()
+
