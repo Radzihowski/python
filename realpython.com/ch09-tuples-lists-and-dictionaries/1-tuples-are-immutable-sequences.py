@@ -15,10 +15,13 @@ print(position2)
 print(position3)
 
 # 4. Using tuple() and a string literal, create a tuple called my_name that contains the letters of your name
-myname = ('m', 'a', 'r', 'k', 't', 'e', 'p', 'l', 'e', 'y')
+myname = ("Mark Tapley")
 print(myname)
 
 # 5. Check whether the character 'x' is in my_name using the in keyword
+print("x" in myname)
+
 
 # 6. Create a new tuple containing all but the first letter in my_name using slice notation.
-
+new_tuple = myname[1:]
+print(new_tuple)
