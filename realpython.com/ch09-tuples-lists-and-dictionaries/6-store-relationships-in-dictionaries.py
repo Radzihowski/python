@@ -25,4 +25,10 @@ del captains["Discovery"]
 
 # 6. Bonus: Make the same dictionary by using dict() and passing in the initial values when you first create
 # the dictionary.
-
+captains = dict(
+        [
+            ("Enterprise", "Picard"),
+            ("Voyager", "Janeway"),
+            ("Defiant", "Sisko"),
+        ]
+    )
