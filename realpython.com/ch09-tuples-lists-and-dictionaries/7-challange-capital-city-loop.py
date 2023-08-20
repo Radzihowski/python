@@ -54,5 +54,6 @@ capitals_dict = {
     "Wyoming": "Cheyenne",
 }
 
-target_word = random.choice(capitals_dict)
-print(target_word)
+state, capital = random.choice(list(capitals_dict.items()))
+
+while True:
