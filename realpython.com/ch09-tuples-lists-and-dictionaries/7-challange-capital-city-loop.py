@@ -57,3 +57,11 @@ capitals_dict = {
 state, capital = random.choice(list(capitals_dict.items()))
 
 while True:
+    guess = input(f"What is the capital of {state}?\n").lower()
+    if guess == "exit":
+        print(f"The capital of '{state}' is '{capital}' ")
+        print("Goodbye")
+        break
+    elif guess == capital.lower():
+        print("Correct")
+        break
