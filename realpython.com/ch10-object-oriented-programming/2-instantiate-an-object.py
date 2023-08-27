@@ -1,3 +1,4 @@
+# Examples from chapter 10.2 Instantiate an Object
 class Dog:
     pass
 
