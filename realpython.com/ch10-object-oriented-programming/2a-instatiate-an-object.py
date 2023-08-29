@@ -18,3 +18,15 @@ class Dog:
 
 philo = Dog("Philo", 5, "brown")
 print(f"{philo.name}'s coat is {philo.coat_color}.")
+
+class Car:
+    def __init__(self, color, mileage):
+        self.color = color
+        self.mileage = mileage
+
+
+blue = Car("blue", 20000)
+red = Car("red", 30000)
+
+for car in (blue, red):
+    print(f"The {car.color} car has {car.mileage} miles")
