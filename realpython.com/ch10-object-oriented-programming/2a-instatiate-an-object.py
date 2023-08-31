@@ -19,6 +19,9 @@ class Dog:
 philo = Dog("Philo", 5, "brown")
 print(f"{philo.name}'s coat is {philo.coat_color}.")
 
+
+# 2. Create a Car class
+
 class Car:
     def __init__(self, color, mileage):
         self.color = color
@@ -30,3 +33,23 @@ red = Car("red", 30000)
 
 for car in (blue, red):
     print(f"The {car.color} car has {car.mileage} miles")
+
+
+# 3. Modify the Car class with an instance method called .drive()
+class Car:
+    def __init__(self, color, mileage):
+        self.color = color
+        self.mileage = mileage
+
+    def drive(self, miles):
+        return car.mileage + miles
+
+
+blue = Car("blue", 20000)
+red = Car("red", 30000)
+
+
+for car in (blue, red):
+    print(f"The {car.color} car has {car.mileage} miles")
+
+print(red.drive(100))
