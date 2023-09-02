@@ -1,7 +1,7 @@
 # 10.3 Exercises
 
 # 1. Create a GoldenRetriver class that inherits from the Dog class.
-class Dof:
+class Dog:
     species = "Canis familiaris"
 
     def __init__(self, name, age):
@@ -14,3 +14,8 @@ class Dof:
     def __init__(self, sound):
         return f"{self.name} says {sound}"
 
+class GoldenRetriver(Dog):
+    def __int__(self, sound="Bark"):
+        return super().speak(sound)
+
+print(GoldenRetriver)
